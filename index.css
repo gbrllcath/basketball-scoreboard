@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Scoreboard3-font";
+    src: url("DangerOnTheMotorway.ttf");
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: #222371;
+}
+
+.container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.player-label{
+    font-family:"Quantico", sans-serif;
+    font-size:40px;
+    margin:20px 0px;
+    color: #FFFFFF;
+    
+}
+
+.scorebox {
+    width:155px;
+    height:120px;
+    color: #C8221B;
+    font-family:"Scoreboard3-font", sans-serif;
+    font-size:40px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    padding:8px 16px;
+    border:1px solid white;
+}
+
+.points-row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top:25px;
+    gap:9px;
+    
+}
+
+.points-btn{
+    font-family:"Quantico", sans-serif;
+    height:45px;
+    width:45px;
+    font-size:18px;
+    border:1px solid white;
+    border-radius:5px;
+    background-color: black;
+    color:white;
+}
+
+#newgame-btn{
+    font-family:"Quantico", sans-serif;
+    text-align: center;
+    display:block;
+    width:250px;
+    height:50px;
+    margin:50px auto;
+    border-radius:5px;
+    background-color:black;
+    color:white;
+    
+}
+
+#gamehistory {
+    text-align: center;
+    font-family:"Quantico", sans-serif;
+    color: #FFFFFF;
+}
+
+#history-list{
+    font-family:"Quantico", sans-serif;
+    font-size:30px;
+    margin:0 auto;
+    border-collapse: collapse;
+    color: #FFFFFF;
+}
+
+#history-list td {
+    padding:10px 20px;
+    text-align: center;
+}

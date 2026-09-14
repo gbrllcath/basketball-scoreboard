@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="player-card">
+                <h3 class="player-label">HOME</h3>
+                <div class="scorebox">
+                    <h1 id="homescore-el">0</h1>
+                </div>
+                <div class="points-row">
+                    <button class="points-btn" onclick="homeAdd1()">+1</button>
+                    <button class="points-btn" onclick="homeAdd2()">+2</button>
+                    <button class="points-btn" onclick="homeAdd3()">+3</button>
+                </div>
+            </div>
+            <div class="player-card">
+                <h3 class="player-label">GUEST</h3>
+                <div class="scorebox">
+                    <h1 id="guestscore-el">0</h1>
+                </div>
+                <div class="points-row">
+                    <button class="points-btn" onclick="guestAdd1()">+1</button>
+                    <button class="points-btn" onclick="guestAdd2()">+2</button>
+                    <button class="points-btn" onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="action-row">
+            <button id="newgame-btn" onclick="newGame()">NEW GAME</button>
+        </div>
+        <div>
+            <h2 id="gamehistory">GAME HISTORY</h2>
+            <table id="history-list"></table>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
